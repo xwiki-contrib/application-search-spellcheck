@@ -24,20 +24,32 @@
   <parent>
     <groupId>org.xwiki.commons</groupId>
     <artifactId>xwiki-commons-pom</artifactId>
-    <version>5.4.4</version>
+    <version>9.2</version>
   </parent>
   <groupId>org.xwiki.contrib</groupId>
   <artifactId>application-application-spellchecker</artifactId>
   <version>1.0</version>
   <packaging>xar</packaging>
-  <name>XWiki Application - application-spellchecker</name>
-  <description>Spellchecker Search Extension</description>
+  <name>Spellchecker Search UI Extension</name>
+  <description>Spellchecker Search UI Extension</description>
   <developers>
     <developer>
       <id>ldubost</id>
-      <name>ldubost</name>
+      <name>Ludovic Dubost</name>
     </developer>
   </developers>
+ <properties>
+   <!-- Don't run CLIRR here since there's no Java code. -->
+   <xwiki.clirr.skip>true</xwiki.clirr.skip>
+   <xwiki.extension.category>uix</xwiki.extension.category>
+ </properties>
+  <dependencies>
+    <dependency>
+      <groupId>com.tupilabs</groupId>
+      <artifactId>jazzy</artifactId>
+      <version>0.6</version>
+    </dependency>
+  </dependencies>
  <build>
     <!-- Needed to add support for the XAR packaging -->
     <extensions>
