@@ -28,7 +28,7 @@
   </parent>
   <groupId>org.xwiki.contrib</groupId>
   <artifactId>application-application-spellchecker</artifactId>
-  <version>1.0</version>
+  <version>1.0.1-SNAPSHOT</version>
   <packaging>xar</packaging>
   <name>Spellchecker Search UI Extension</name>
   <description>Spellchecker Search UI Extension</description>
@@ -72,7 +72,7 @@
     <connection>scm:git:git://github.com/xwiki-contrib/application-search-spellcheck.git</connection>
     <developerConnection>scm:git:git@github.com:xwiki-contrib/application-search-spellcheck.git</developerConnection>
     <url>https://github.com/xwiki-contrib/application-search-spellcheck</url>
-    <tag>application-application-spellchecker-1.0</tag>
+    <tag>HEAD</tag>
   </scm>
   <distributionManagement>
     <repository>
